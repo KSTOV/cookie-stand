@@ -1,0 +1,14 @@
+body
+{
+    background-color: rgb(238, 207, 207);
+}
+
+header, footer
+{
+    background-color: coral;
+}
+
+.images
+{
+    margin: auto;
+}

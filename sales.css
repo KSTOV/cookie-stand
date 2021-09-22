@@ -1,0 +1,31 @@
+
+table
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color:darksalmon;
+    margin: auto;
+}
+
+td
+{
+    border: 1px solid black;
+    border-radius: 2.5px;
+}
+
+header, footer
+{
+    background-color: coral;
+}
+
+h1, h3
+{
+    text-align: center;
+}
+
+body
+{
+    background-color: rgb(238, 207, 207);
+}
