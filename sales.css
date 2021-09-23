@@ -1,26 +1,42 @@
 
 table
 {
-    border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
     text-align: center;
     background-color:darksalmon;
     margin: auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.493);
+    font-family: 'Inter', sans-serif;
+    
 }
 
 td
 {
     border: 1px solid black;
     border-radius: 2.5px;
+    padding: 5px;
 }
 
-header, footer
+header
 {
     background-color: coral;
+    height: 80px;
+    margin-bottom: 20px;
+    
+}
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin: none;
+    width: 100%;
+    padding: 20px;
+    background-color: darkcyan;
+
 }
 
-h1, h3
+h1, h2, h3
 {
     text-align: center;
 }
@@ -28,4 +44,38 @@ h1, h3
 body
 {
     background-color: rgb(238, 207, 207);
+}
+
+h2#nav a
+{
+    color: black;
+    text-decoration: none;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: rgb(236, 224, 208);
+}
+
+h1#pageTitle 
+{
+    color: black;
+    text-decoration: none;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: rgb(53, 43, 29);
+}
+
+h2 a:hover 
+{
+    color: darkcyan;
+}
+
+h3 {
+    font-family: 'Archivo Black';
+    text-transform: uppercase;
+    color: rgb(236, 224, 208);
+    font-size: 1em;
 }
