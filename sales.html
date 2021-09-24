@@ -14,10 +14,32 @@
                 <a href="index.html">Home</a>
             </h2>
             <h1 id="pageTitle">Salmon Cookies Sales</h1>
-                    </header>
+        </header>
+
+        <form id='addLocation'>
+            <fieldset>
+                <section class="inputForm">
+                    <label for="name">Location Name:</label>
+                    <input type="text" name="locationName" required>
+
+                    <label for="min">Minimum Customers Per Hour:</label>
+                    <input type="number" name="minCust" required>
+                </section>
+
+                <section class="inputForm">
+                    <label for="max">Maximum Customers Per Hour:</label>
+                    <input type="number" name="maxCust" required>
+
+                    <label for="avg"> Average Cookies Sold:</label>
+                    <input type="number" name="avgCookie" required>
+                </section>
+                <input type="submit" value="Add" id="button">
+            </fieldset>
+        </form>
+
         <table id="sales">
             <th>
-                <tr>
+                <tr class="salesHeader">
                     <td>Location</td>
                     <td>6:00am</td>
                     <td>7:00am</td>

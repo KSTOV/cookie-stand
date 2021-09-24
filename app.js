@@ -2,6 +2,27 @@
 
 let hoursOp = ['6am', '7am', '8am', '9am','10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
+let addForm = document.getElementById('addLocation')
+
+addForm.addEventListener('submit', addALocation);
+
+function addALocation(event) {
+    event.preventDefault();
+
+    let formLocation = event.target.locationName.value;
+    let formMin = event.target.minCust.value;
+    let formMax = event.target.maxCust.value;
+    let formSale = event.target.avgCookie.value;
+
+    let newLocation = new Stores(formLocation, formMin, formMax, formSale);
+
+    let footerEl = document.getElementById('footer');
+    footerEl.parentNode.removeChild(footerEl);
+
+    newLocation.render();
+    renderFooter(Stores.all);
+}
+
 function Stores(name, minCust, maxCust, avgCookieSale)
 {
     this.name = name;
@@ -66,8 +87,8 @@ paris.render();
 let lima = new Stores('Lima', 2, 16, 4.6);
 lima.render();
 
-function renderFooter() {
-
+function renderFooter() 
+{
     let parentEl = document.getElementById('sales');
     let rowEl = document.createElement('tr');
   
@@ -90,7 +111,8 @@ function renderFooter() {
     dataEl = document.createElement('td');
     dataEl.innerText = grandTotal;
     rowEl.appendChild(dataEl);
+    rowEl.id = 'footer';
     parentEl.appendChild(rowEl);
-  }
-  
-  renderFooter();
+}
+ 
+renderFooter();
