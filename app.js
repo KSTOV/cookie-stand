@@ -108,6 +108,7 @@ function renderFooter()
       dataEl.innerText = sum;
       rowEl.appendChild(dataEl);
     }
+    
     dataEl = document.createElement('td');
     dataEl.innerText = grandTotal;
     rowEl.appendChild(dataEl);
